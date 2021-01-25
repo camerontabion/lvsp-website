@@ -33,16 +33,16 @@ header {
   position: sticky;
   top: 0;
   background-color: var(--light-shade);
-  border-top: 1.6rem solid var(--main-brand-color);
+  border-top: clamp(0.8rem, 30vw, 1.6rem) solid var(--main-brand-color);
   z-index: 1;
 }
 header .main-container {
-  height: clamp(5rem, 10vw, 7rem);
+  height: clamp(5rem, 8vw, 7rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header img { width: clamp(12rem, 40vw, 24rem) }
+header img { width: clamp(12rem, 30vw, 24rem) }
 header nav {
   display: flex;
   align-items: flex-end;
@@ -51,8 +51,8 @@ header nav {
 header nav a {
   color: var(--light-accent);
   text-decoration: none;
-  font-size: clamp(0.8rem, 3vw, 2rem);
-  margin-left: clamp(0.8rem, 3vw, 2rem);
+  font-size: clamp(1rem, 2vw, 2rem);
+  margin-left: clamp(1rem, 2vw, 2rem);
   transition: color 0.25s ease-in-out;
 }
 header nav a:hover { color: var(--main-brand-color) }
@@ -69,7 +69,7 @@ footer {
 }
 footer .award-info {
   text-align: center;
-  font-size: clamp(0.8rem, 3vw, 2rem);
+  font-size: clamp(1rem, 2vw, 2rem);
   margin-right: clamp(1rem, 2vw, 2rem);
   line-height: 1.4;
 }
