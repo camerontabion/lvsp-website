@@ -145,10 +145,6 @@ html { scroll-behavior: smooth }
     text-align: center;
     align-items: center;
   }
-  .mission-statement {
-    margin-top: clamp(1rem, 2vw, 4rem);
-  }
-  .hero-subheading {
-    margin-top: clamp(2rem, 2vw, 4rem);
-  }
+  .mission-statement { margin-top: clamp(1rem, 2vw, 4rem) }
+  .hero-subheading { margin-top: clamp(2rem, 2vw, 4rem) }
 }
