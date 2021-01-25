@@ -8,7 +8,7 @@ html { scroll-behavior: smooth }
 .hero-background {
   display: block;
   width: 100%;
-  height: calc(100vh - (clamp(5rem, 10vw, 7rem) + 1.6rem));
+  height: calc(100vh - (clamp(5rem, 8vw, 7rem) + clamp(0.8rem, 30vw, 1.6rem)));
   object-fit: cover;
   object-position: left;
 }
@@ -42,7 +42,7 @@ html { scroll-behavior: smooth }
   color: var(--light-shade);
 }
 .hero-subheading {
-  font-size: clamp(1.6rem, 4vw, 3rem);
+  font-size: clamp(1.6rem, 2vw, 3rem);
   font-weight: 400;
   line-height: 1.8;
   margin-bottom: clamp(2rem, 2vw, 4rem);
@@ -50,7 +50,7 @@ html { scroll-behavior: smooth }
 .hero-cta {
   background-color: var(--main-brand-color);
   color: var(--light-shade);
-  font-size: clamp(1.4rem, 4vw, 2.8rem);
+  font-size: clamp(1.4rem, 2vw, 2.8rem);
   font-weight: 400;
   padding: clamp(0.8rem, 1vw, 1.2rem) clamp(2rem, 1vw, 4rem);
   border-radius: 1rem;
@@ -60,25 +60,26 @@ html { scroll-behavior: smooth }
 /* Overview */
 #overview {
   text-align: center;
-  margin-top: clamp(-6rem, 6vw, -9rem);
+  margin-top: clamp(-3rem, 3vw, -4.5rem);
   padding-top: clamp(6rem, 6vw, 9rem);
 }
 #overview img {
   display: inline-block;
-  width: clamp(20rem, 80vw, 56rem);
+  width: clamp(20rem, 60vw, 56rem);
 }
 .mission-statement {
-  font-size: clamp(1.4rem, 2vw, 3rem);
+  font-size: clamp(1.4rem, 2vw, 2.6rem);
   line-height: 1.4;
-  margin: clamp(1rem, 2vw, 2rem) 0 clamp(3rem, 2vw, 6rem) 0;
+  margin-bottom: clamp(3rem, 2vw, 6rem);
 }
 
 /* Responsive iframe */
 #lvsp-video {
   position: relative;
-  padding-top: 56.25%;
+  padding-top: 46.25%;
   overflow: hidden;
-  width: 100%
+  width: 80%;
+  margin: 0 auto;
 }
 #lvsp-video iframe {
   position: absolute;
@@ -92,7 +93,7 @@ html { scroll-behavior: smooth }
 
 /* Benefits */
 #benefits {
-  margin-top: clamp(6rem, 6vw, 9rem);
+  margin-top: clamp(3rem, 3vw, 4.5rem);
   background-color: var(--dark-shade);
   padding: clamp(2rem, 2vw, 4rem) 0;
   text-align: center;
@@ -125,14 +126,6 @@ html { scroll-behavior: smooth }
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   }
-  .hero-content .main-container { flex-direction: column }
-  .hero-logo { width: clamp(12rem, 20vw, 20rem) }
-  .hero-text {
-    margin: 0;
-    text-align: center;
-    align-items: center;
-  }
-  .hero-subheading { margin-top: clamp(2rem, 2vw, 4rem) }
 }
 
 @media (max-width: 480px) {
@@ -140,5 +133,22 @@ html { scroll-behavior: smooth }
     display: flex;
     flex-direction: column;
     margin: 0;
+  }
+  #lvsp-video {
+    padding-top: 51.25%;
+    width: 90%;
+  }
+  .hero-content .main-container { flex-direction: column }
+  .hero-logo { width: clamp(12rem, 20vw, 20rem) }
+  .hero-text {
+    margin: 0;
+    text-align: center;
+    align-items: center;
+  }
+  .mission-statement {
+    margin-top: clamp(1rem, 2vw, 4rem);
+  }
+  .hero-subheading {
+    margin-top: clamp(2rem, 2vw, 4rem);
   }
 }
