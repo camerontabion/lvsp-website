@@ -8,7 +8,7 @@ html { scroll-behavior: smooth }
 .hero-background {
   display: block;
   width: 100%;
-  height: calc(100vh - 8.6rem);
+  height: calc(100vh - (clamp(5rem, 10vw, 7rem) + 1.6rem));
   object-fit: cover;
   object-position: left;
 }
@@ -58,7 +58,8 @@ html { scroll-behavior: smooth }
 /* Overview */
 #overview {
   text-align: center;
-  margin-top: clamp(4rem, 6vw, 9rem);
+  margin-top: clamp(-6rem, 6vw, -9rem);
+  padding-top: clamp(6rem, 6vw, 9rem);
 }
 #overview img {
   display: inline-block;
@@ -89,7 +90,7 @@ html { scroll-behavior: smooth }
 
 /* Benefits */
 #benefits {
-  margin-top: clamp(4rem, 6vw, 9rem);
+  margin-top: clamp(6rem, 6vw, 9rem);
   background-color: var(--dark-shade);
   padding: clamp(2rem, 2vw, 4rem) 0;
   text-align: center;
