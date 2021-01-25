@@ -122,9 +122,7 @@ html { scroll-behavior: smooth }
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   }
-  .hero-content .main-container {
-    flex-direction: column;
-  }
+  .hero-content .main-container { flex-direction: column }
   .hero-logo { width: clamp(20rem, 60vw, 40rem) }
   .hero-text {
     margin: 0;
