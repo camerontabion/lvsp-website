@@ -1,6 +1,4 @@
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth }
 
 /* Hero Section */
 #hero {
@@ -127,17 +125,13 @@ html {
   .hero-content .main-container {
     flex-direction: column;
   }
-  .hero-logo {
-    width: clamp(20rem, 60vw, 40rem);
-  }
+  .hero-logo { width: clamp(20rem, 60vw, 40rem) }
   .hero-text {
     margin: 0;
     text-align: center;
     align-items: center;
   }
-  .hero-subheading {
-    margin-top: clamp(2rem, 2vw, 4rem);
-  }
+  .hero-subheading { margin-top: clamp(2rem, 2vw, 4rem) }
 }
 
 @media (max-width: 480px) {
