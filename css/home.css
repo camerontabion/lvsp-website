@@ -1,0 +1,149 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  text-align: left;
+}
+.hero-background {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 8.6rem);
+  object-fit: cover;
+  object-position: left;
+}
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(22, 20, 24, 0.4) border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-content .main-container  {
+  display: flex;
+  align-items: center;
+}
+.hero-logo {
+  width: clamp(30rem, 30vw, 56rem);
+  height: 100%;
+}
+.hero-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: clamp(1rem, 3vw, 6rem);
+  color: var(--light-shade);
+}
+.hero-subheading {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: clamp(2rem, 2vw, 4rem);
+}
+.hero-cta {
+  background-color: var(--main-brand-color);
+  color: var(--light-shade);
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  font-weight: 400;
+  padding: clamp(1rem, 1vw, 2rem) clamp(2rem, 1vw, 4rem);
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+/* Overview */
+#overview {
+  text-align: center;
+  margin-top: clamp(4rem, 6vw, 9rem);
+}
+#overview img {
+  display: inline-block;
+  width: clamp(20rem, 80vw, 56rem);
+}
+.mission-statement {
+  font-size: clamp(1.4rem, 2vw, 3rem);
+  line-height: 1.4;
+  margin: clamp(1rem, 2vw, 2rem) 0 clamp(3rem, 2vw, 6rem) 0;
+}
+
+/* Responsive iframe */
+#lvsp-video {
+  position: relative;
+  padding-top: 56.25%;
+  overflow: hidden;
+  width: 100%
+}
+#lvsp-video iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Benefits */
+#benefits {
+  margin-top: clamp(4rem, 6vw, 9rem);
+  background-color: var(--dark-shade);
+  padding: clamp(2rem, 2vw, 4rem) 0;
+  text-align: center;
+}
+#benefits h2 {
+  font-size: clamp(3rem, 2vw, 4rem);
+  font-weight: 600;
+  margin-bottom: clamp(1rem, 2vw, 2rem);
+  color: var(--light-shade);
+}
+.benefit-list {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  color: var(--dark-shade);
+}
+.benefit {
+  margin: clamp(1rem, 2vw, 2rem);
+  padding: clamp(1rem, 2vw, 2rem);
+  background-color: var(--light-shade);
+  border-radius: 1rem;
+}
+.benefit img { width: clamp(6rem, 6vw, 10rem) }
+.benefit h3 { margin: clamp(1rem, 2vw, 2rem) 0 }
+.benefit p { line-height: 1.4 }
+
+@media (max-width: 1024px) {
+  .benefit-list {
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  }
+  .hero-content .main-container {
+    flex-direction: column;
+  }
+  .hero-logo {
+    width: clamp(20rem, 60vw, 40rem);
+  }
+  .hero-text {
+    margin: 0;
+    text-align: center;
+    align-items: center;
+  }
+  .hero-subheading {
+    margin-top: clamp(2rem, 2vw, 4rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .benefit-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+}

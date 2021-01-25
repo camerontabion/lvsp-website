@@ -34,8 +34,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 7rem;
 }
-header img { width: clamp(12rem, 40vw, 30rem) }
+header img { width: clamp(12rem, 40vw, 24rem) }
 header nav {
   display: flex;
   align-items: flex-end;
@@ -64,6 +65,7 @@ footer .award-info {
   text-align: center;
   font-size: clamp(0.8rem, 3vw, 2rem);
   margin-right: clamp(1rem, 2vw, 2rem);
+  line-height: 1.4;
 }
 footer .award-info a { color: var(--light-shade) }
 footer img { width: clamp(4rem, 10vw, 8rem) }
