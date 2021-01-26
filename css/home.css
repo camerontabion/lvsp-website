@@ -129,10 +129,10 @@ html { scroll-behavior: smooth }
 .benefit h3 {
   margin-bottom: clamp(1rem, 2vw, 2rem);
   margin-top: clamp(4rem, 4vw, 6rem);
-  font-size: clamp(1.4rem, 1vw, 2rem);
+  font-size: clamp(1.4rem, 2vw, 2rem);
 }
 .benefit p {
-  font-size: clamp(1.2rem, 1vw, 1.8rem);
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
   line-height: 1.4;
 }
 
