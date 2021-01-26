@@ -60,8 +60,9 @@ html { scroll-behavior: smooth }
 /* Overview */
 #overview {
   text-align: center;
-  margin-top: clamp(-3rem, 3vw, -4.5rem);
-  padding-top: clamp(6rem, 6vw, 9rem);
+  margin-bottom: clamp(3rem, 3vw, 7rem);
+  margin-top: calc(-1 * clamp(3rem, 3vw, 6rem));
+  padding-top: clamp(6rem, 6vw, 12rem);
 }
 #overview img {
   display: inline-block;
@@ -93,9 +94,8 @@ html { scroll-behavior: smooth }
 
 /* Benefits */
 #benefits {
-  margin-top: clamp(3rem, 3vw, 4.5rem);
   background-color: var(--dark-shade);
-  padding: clamp(2rem, 2vw, 4rem) 0;
+  padding: clamp(3rem, 3vw, 6rem) 0;
   text-align: center;
 }
 #benefits h2 {
@@ -113,12 +113,22 @@ html { scroll-behavior: smooth }
 }
 .benefit {
   margin: clamp(1rem, 2vw, 2rem);
+  margin-top: clamp(3rem, 3vw, 5rem);
   padding: clamp(1rem, 2vw, 2rem);
   background-color: var(--light-shade);
   border-radius: 1rem;
+  position: relative;
 }
-.benefit img { width: clamp(6rem, 6vw, 10rem) }
-.benefit h3 { margin: clamp(1rem, 2vw, 2rem) 0 }
+.benefit img {
+  width: clamp(6rem, 6vw, 10rem);
+  position: absolute;
+  top: calc(-1 * clamp(6rem, 6vw, 10rem)/2);
+  left: calc(50% - clamp(6rem, 6vw, 10rem)/2);
+}
+.benefit h3 {
+  margin-bottom: clamp(1rem, 2vw, 2rem);
+  margin-top: clamp(3rem, 3vw, 5rem);
+}
 .benefit p { line-height: 1.4 }
 
 @media (max-width: 1024px) {
