@@ -36,7 +36,7 @@
 }
 .banner-img {
   display: block;
-  max-height: 58rem;
+  max-height: clamp(14rem, 40vw, 58rem);
   width: 100%;
   object-fit: cover;
   object-position: center 30%;
