@@ -1,0 +1,29 @@
+.page-title {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 4rem);
+  padding: clamp(1rem, 2vw, 2rem) 0;
+  color: var(--dark-shade);
+}
+
+.resources {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6rem;
+  border-top: 0.1rem solid var(--dark-shade);
+  padding: 6rem 0;
+}
+.resource-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.resource-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+.resource ol {
+  font-size: 1.8rem;
+  list-style: upper-alpha;
+  margin-left: 4rem;
+  line-height: 1.6;
+}
+.resource a { color: var(--light-accent) }
