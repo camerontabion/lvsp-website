@@ -110,9 +110,9 @@ html { scroll-behavior: smooth }
   grid-template-columns: 1fr 1fr 1fr;
   font-size: clamp(1.4rem, 2vw, 1.8rem);
   color: var(--dark-shade);
+  gap: clamp(1rem, 2vw, 2rem);
 }
 .benefit {
-  margin: clamp(1rem, 2vw, 2rem);
   margin-top: clamp(3rem, 3vw, 5rem);
   padding: clamp(1rem, 2vw, 2rem);
   background-color: var(--light-shade);
