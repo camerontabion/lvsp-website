@@ -69,9 +69,11 @@ html { scroll-behavior: smooth }
   width: clamp(20rem, 60vw, 56rem);
 }
 .mission-statement {
-  font-size: clamp(1.4rem, 2vw, 2.6rem);
+  font-size: clamp(1.4rem, 2vw, 2.4rem);
   line-height: 1.4;
+  margin: 0 auto;
   margin-bottom: clamp(3rem, 2vw, 6rem);
+  width: 80%;
 }
 
 /* Responsive iframe */
@@ -99,7 +101,7 @@ html { scroll-behavior: smooth }
   text-align: center;
 }
 #benefits h2 {
-  font-size: clamp(3rem, 2vw, 4rem);
+  font-size: clamp(2.4rem, 2vw, 4rem);
   font-weight: 600;
   margin-bottom: clamp(1rem, 2vw, 2rem);
   color: var(--light-shade);
@@ -108,7 +110,6 @@ html { scroll-behavior: smooth }
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  font-size: clamp(1.4rem, 2vw, 1.8rem);
   color: var(--dark-shade);
   gap: clamp(1rem, 2vw, 2rem);
 }
@@ -127,9 +128,13 @@ html { scroll-behavior: smooth }
 }
 .benefit h3 {
   margin-bottom: clamp(1rem, 2vw, 2rem);
-  margin-top: clamp(3rem, 3vw, 5rem);
+  margin-top: clamp(4rem, 4vw, 6rem);
+  font-size: clamp(1.4rem, 1vw, 2rem);
 }
-.benefit p { line-height: 1.4 }
+.benefit p {
+  font-size: clamp(1.2rem, 1vw, 1.8rem);
+  line-height: 1.4;
+}
 
 @media (max-width: 1024px) {
   .benefit-list {
@@ -144,6 +149,10 @@ html { scroll-behavior: smooth }
     flex-direction: column;
     margin: 0;
   }
+  .mission-statement {
+    margin-top: clamp(1rem, 2vw, 4rem);
+    width: 90%;
+  }
   #lvsp-video {
     padding-top: 51.25%;
     width: 90%;
@@ -155,6 +164,5 @@ html { scroll-behavior: smooth }
     text-align: center;
     align-items: center;
   }
-  .mission-statement { margin-top: clamp(1rem, 2vw, 4rem) }
   .hero-subheading { margin-top: clamp(2rem, 2vw, 4rem) }
 }
