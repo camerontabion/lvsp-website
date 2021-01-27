@@ -114,7 +114,7 @@ html { scroll-behavior: smooth }
   gap: clamp(1rem, 2vw, 2rem);
 }
 .benefit {
-  margin-top: clamp(3rem, 3vw, 5rem);
+  margin-top: clamp(4rem, 4vw, 6rem);
   padding: clamp(1rem, 2vw, 2rem);
   background-color: var(--light-shade);
   border-radius: 1rem;
