@@ -61,7 +61,6 @@
 .banner-text {
   font-size: clamp(2rem, 4vw, 4rem);
   font-weight: 400;
-  letter-spacing: clamp(0rem, 1vw, 1rem);
 }
 
 /* Person */
@@ -109,13 +108,13 @@
   width: 100%;
   height: clamp(2.4rem, 3vw, 4rem);
   color: var(--light-shade);
-  font-size: clamp(1rem, 1.8vw, 2rem);
+  font-size: clamp(0.8rem, 1.8vw, 2rem);
   background: rgba(22, 20, 24, 0.5) border-box;
   transition: color 0.3s, background-color 0.3s;
 }
 .slideshow-controls button {
   height: clamp(2.4rem, 3vw, 4rem);
-  padding: 0 clamp(3rem, 3vw, 4rem);
+  padding: 0 clamp(2rem, 3vw, 4rem);
   border: none;
   color: var(--light-shade);
   font-size: clamp(1rem, 1.8vw, 2rem);
@@ -135,6 +134,10 @@
     gap: clamp(1rem, 2vw, 4rem);
     margin-bottom: 0;
   }
+}
+
+@media (max-height: 480px) {
+  .events { grid-template-columns: 1fr 1fr }
 }
 
 @media (max-width: 480px) {
