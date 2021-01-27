@@ -108,6 +108,7 @@
   width: 100%;
   height: clamp(2.4rem, 3vw, 4rem);
   color: var(--light-shade);
+  text-align: center;
   font-size: clamp(1rem, 1.4vw, 1.8rem);
   background: rgba(22, 20, 24, 0.5) border-box;
   transition: color 0.3s, background-color 0.3s;
