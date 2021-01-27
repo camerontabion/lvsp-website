@@ -34,16 +34,16 @@ header {
   position: sticky;
   top: 0;
   background-color: var(--light-shade);
-  border-top: clamp(0.8rem, 30vw, 1.6rem) solid var(--main-brand-color);
+  border-top: clamp(0.8rem, 2vw, 1.6rem) solid var(--main-brand-color);
   z-index: 1;
 }
 header .main-container {
-  height: clamp(5rem, 8vw, 7rem);
+  height: clamp(4rem, 9vw, 7rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header img { width: clamp(12rem, 30vw, 24rem) }
+header img { width: clamp(10rem, 30vw, 24rem) }
 header nav {
   display: flex;
   align-items: flex-end;
