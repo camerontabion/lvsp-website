@@ -108,14 +108,13 @@ html { scroll-behavior: smooth }
 }
 .benefit-list {
   display: grid;
-  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   color: var(--dark-shade);
   gap: clamp(1rem, 2vw, 2rem);
 }
 .benefit {
   margin-top: clamp(4rem, 4vw, 6rem);
-  padding: clamp(1rem, 2vw, 2rem);
+  padding: clamp(1.4rem, 2vw, 2rem);
   background-color: var(--light-shade);
   border-radius: 1rem;
   position: relative;
@@ -128,7 +127,7 @@ html { scroll-behavior: smooth }
 }
 .benefit h3 {
   margin-bottom: clamp(1rem, 2vw, 2rem);
-  margin-top: clamp(4rem, 4vw, 6rem);
+  margin-top: clamp(3rem, 4vw, 6rem);
   font-size: clamp(1.4rem, 2vw, 2rem);
 }
 .benefit p {
@@ -137,18 +136,11 @@ html { scroll-behavior: smooth }
 }
 
 @media (max-width: 1024px) {
-  .benefit-list {
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  }
+  .benefit-list { grid-template-columns: 1fr 1fr }
 }
 
 @media (max-width: 480px) {
-  .benefit-list {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-  }
+  .benefit-list { grid-template-columns: 1fr }
   .mission-statement {
     margin-top: clamp(1rem, 2vw, 4rem);
     width: 90%;
