@@ -15,7 +15,7 @@
   padding: clamp(0.6rem, 1vw, 1rem) 0;
   margin: 0 clamp(1rem, 1vw, 2rem);
   color: var(--dark-shade);
-  font-size: clamp(0.8rem, 2vw, 1.8rem);
+  font-size: clamp(1rem, 2vw, 1.8rem);
   text-align: center;
   line-height: 1.6;
   cursor: pointer;
@@ -108,7 +108,7 @@
   width: 100%;
   height: clamp(2.4rem, 3vw, 4rem);
   color: var(--light-shade);
-  font-size: clamp(0.8rem, 1.8vw, 2rem);
+  font-size: clamp(1rem, 1.4vw, 1.8rem);
   background: rgba(22, 20, 24, 0.5) border-box;
   transition: color 0.3s, background-color 0.3s;
 }
