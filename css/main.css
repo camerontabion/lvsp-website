@@ -1,9 +1,21 @@
 :root {
+  /* Colors */
   --light-shade: #FAF9F9;
   --light-accent: #7D7982;
   --main-brand-color: #CF0A2C;
   --dark-accent: #BB8551;
   --dark-shade: #161418;
+  
+  /* Font Sizes */
+  --heading-1: clamp(3.4rem, 4vw, 4rem);
+  --heading-2: clamp(2.4rem, 2vw, 3rem);
+  --heading-3: clamp(1.8rem, 3vw, 2.4rem);
+  --heading-4: clamp(1.4rem, 2vw, 2rem);
+  --base-font-size: clamp(1.2rem, 2vw, 1.8rem);
+  --base-nav-size: clamp(1rem, 2vw, 1.8rem);
+  
+  /* Misc */
+  --base-border-radius: 1rem;
 }
 
 * {
@@ -15,7 +27,7 @@
 html {
   font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 62.5%;
-  line-height: 1;
+  line-height: 1.7;
 }
 
 body {
@@ -26,7 +38,7 @@ body {
 .main-container {
   max-width: 140rem;
   margin: 0 auto;
-  padding: 1rem clamp(1rem, 2vw, 2rem);
+  padding: 0 clamp(1rem, 2vw, 2rem);
 }
 
 /* Header */
@@ -52,7 +64,7 @@ header nav {
 header nav a {
   color: var(--light-accent);
   text-decoration: none;
-  font-size: clamp(1rem, 3vw, 2rem);
+  font-size: var(--base-nav-size);
   margin-left: clamp(1rem, 2vw, 2rem);
   transition: color 0.25s ease-in-out;
 }
@@ -70,9 +82,8 @@ footer {
 }
 footer .award-info {
   text-align: center;
-  font-size: clamp(1rem, 2vw, 2rem);
-  margin-right: clamp(1rem, 2vw, 2rem);
-  line-height: 1.4;
+  font-size: var(--base-nav-size);
+  margin-right: 2rem;
 }
 footer .award-info a { color: var(--light-shade) }
-footer img { width: clamp(4rem, 10vw, 8rem) }
+footer img { width: clamp(4rem, 10vw, 6rem) }

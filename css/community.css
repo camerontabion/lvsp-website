@@ -1,6 +1,6 @@
 .page-title {
   text-align: center;
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-size: var(--heading-1);
   padding: clamp(1rem, 2vw, 2rem) 0;
   color: var(--dark-shade);
 }
@@ -15,9 +15,8 @@
   padding: clamp(0.6rem, 1vw, 1rem) 0;
   margin: 0 clamp(1rem, 1vw, 2rem);
   color: var(--dark-shade);
-  font-size: clamp(1rem, 2vw, 1.8rem);
+  font-size: var(--base-nav-size);
   text-align: center;
-  line-height: 1.6;
   cursor: pointer;
   transition: 0.2s box-shadow;
 }
@@ -59,7 +58,7 @@
   background-color: transparent;
 }
 .banner-text {
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-size: var(--heading-1);
   font-weight: 400;
 }
 
@@ -77,8 +76,7 @@
 .person:last-child { border-bottom: none }
 .person-img { width: clamp(14rem, 26vw, 26rem) }
 .person-info {
-  font-size: clamp(1.2rem, 2vw, 1.8rem);
-  line-height: 1.6;
+  font-size: var(--base-font-size);
 }
 .person-email { margin-top: 1rem }
 .person-email a { color: var(--light-accent) }
@@ -107,18 +105,20 @@
   bottom: 0;
   width: 100%;
   height: clamp(2.4rem, 3vw, 4rem);
-  color: var(--light-shade);
-  text-align: center;
-  font-size: clamp(1rem, 1.4vw, 1.8rem);
   background: rgba(22, 20, 24, 0.5) border-box;
   transition: color 0.3s, background-color 0.3s;
+}
+.slideshow-controls label {
+  color: var(--light-shade);
+  text-align: center;
+  font-size: var(--base-nav-size);
 }
 .slideshow-controls button {
   height: clamp(2.4rem, 3vw, 4rem);
   padding: 0 clamp(2rem, 3vw, 4rem);
   border: none;
   color: var(--light-shade);
-  font-size: clamp(1rem, 1.8vw, 2rem);
+  font-size: var(--base-font-size);
   background: none;
   cursor: pointer;
   transition: background-color 0.3s;

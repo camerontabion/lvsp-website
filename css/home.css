@@ -29,8 +29,7 @@ html { scroll-behavior: smooth }
 }
 .hero-logo {
   flex: 1;
-  width: clamp(20rem, 20vw, 56rem);
-  height: 100%;
+  width: clamp(20rem, 30vw, 56rem);
 }
 .hero-text {
   flex: 2;
@@ -42,18 +41,17 @@ html { scroll-behavior: smooth }
   color: var(--light-shade);
 }
 .hero-subheading {
-  font-size: clamp(1.6rem, 2vw, 3rem);
+  font-size: var(--heading-3);
   font-weight: 400;
-  line-height: 1.8;
   margin-bottom: clamp(2rem, 2vw, 4rem);
 }
 .hero-cta {
   background-color: var(--main-brand-color);
   color: var(--light-shade);
-  font-size: clamp(1.4rem, 2vw, 2.8rem);
+  font-size: var(--heading-4);
   font-weight: 400;
-  padding: clamp(0.8rem, 1vw, 1.2rem) clamp(2rem, 1vw, 4rem);
-  border-radius: 1rem;
+  padding: 0.6rem 3rem;
+  border-radius: var(--base-border-radius);
   text-decoration: none;
 }
 
@@ -69,8 +67,7 @@ html { scroll-behavior: smooth }
   width: clamp(20rem, 60vw, 56rem);
 }
 .mission-statement {
-  font-size: clamp(1.4rem, 2vw, 2.4rem);
-  line-height: 1.4;
+  font-size: var(--heading-3);
   margin: 0 auto;
   margin-bottom: clamp(3rem, 2vw, 6rem);
   width: 80%;
@@ -101,7 +98,7 @@ html { scroll-behavior: smooth }
   text-align: center;
 }
 #benefits h2 {
-  font-size: clamp(2.4rem, 2vw, 4rem);
+  font-size: var(--heading-1);
   font-weight: 600;
   margin-bottom: clamp(1rem, 2vw, 2rem);
   color: var(--light-shade);
@@ -116,7 +113,7 @@ html { scroll-behavior: smooth }
   margin-top: clamp(4rem, 4vw, 6rem);
   padding: clamp(1.4rem, 2vw, 2rem);
   background-color: var(--light-shade);
-  border-radius: 1rem;
+  border-radius: var(--base-border-radius);
   position: relative;
 }
 .benefit img {
@@ -128,19 +125,15 @@ html { scroll-behavior: smooth }
 .benefit h3 {
   margin-bottom: clamp(1rem, 2vw, 2rem);
   margin-top: clamp(3rem, 4vw, 6rem);
-  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-size: var(--base-font-size);
 }
-.benefit p {
-  font-size: clamp(1.2rem, 2vw, 1.8rem);
-  line-height: 1.4;
-}
+.benefit p { font-size: var(--base-font-size) }
 
 @media (max-width: 1024px) {
   .benefit-list { grid-template-columns: 1fr 1fr }
 }
 
-@media (max-width: 480px) {
-  .benefit-list { grid-template-columns: 1fr }
+@media (max-width: 768px) {
   .mission-statement {
     margin-top: clamp(1rem, 2vw, 4rem);
     width: 90%;
@@ -149,8 +142,14 @@ html { scroll-behavior: smooth }
     padding-top: 51.25%;
     width: 90%;
   }
+}
+
+@media (max-width: 480px) {
+  .benefit-list { grid-template-columns: 1fr }
+}
+
+@media (orientation: portrait) {
   .hero-content .main-container { flex-direction: column }
-  .hero-logo { width: clamp(12rem, 20vw, 20rem) }
   .hero-text {
     margin: 0;
     text-align: center;
