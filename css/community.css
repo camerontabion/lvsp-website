@@ -111,14 +111,14 @@
 .slideshow-controls label {
   color: var(--light-shade);
   text-align: center;
-  font-size: var(--base-nav-size);
+  font-size: calc(var(--base-font-size) * 0.8);
 }
 .slideshow-controls button {
   height: clamp(2.4rem, 3vw, 4rem);
   padding: 0 clamp(2rem, 3vw, 4rem);
   border: none;
   color: var(--light-shade);
-  font-size: var(--base-font-size);
+  font-size: calc(var(--base-font-size) * 0.8);
   background: none;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -133,7 +133,6 @@
   .events {
     grid-template-columns: 1fr;
     gap: clamp(1rem, 2vw, 4rem);
-    margin-bottom: 0;
   }
 }
 
