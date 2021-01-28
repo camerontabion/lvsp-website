@@ -58,16 +58,16 @@ html { scroll-behavior: smooth }
 /* Overview */
 #overview {
   text-align: center;
-  margin-bottom: clamp(3rem, 3vw, 7rem);
   margin-top: calc(-1 * clamp(3rem, 3vw, 6rem));
   padding-top: clamp(6rem, 6vw, 12rem);
+  padding-bottom: clamp(3rem, 4vw, 6rem);
 }
 #overview img {
   display: inline-block;
   width: clamp(20rem, 60vw, 56rem);
 }
 .mission-statement {
-  font-size: var(--heading-3);
+  font-size: var(--heading-4);
   margin: 0 auto;
   margin-bottom: clamp(3rem, 2vw, 6rem);
   width: 80%;
@@ -94,13 +94,12 @@ html { scroll-behavior: smooth }
 /* Benefits */
 #benefits {
   background-color: var(--dark-shade);
-  padding: clamp(3rem, 3vw, 6rem) 0;
+  padding: clamp(3rem, 4vw, 6rem) 0;
   text-align: center;
 }
 #benefits h2 {
   font-size: var(--heading-1);
   font-weight: 600;
-  margin-bottom: clamp(1rem, 2vw, 2rem);
   color: var(--light-shade);
 }
 .benefit-list {
@@ -124,7 +123,7 @@ html { scroll-behavior: smooth }
 }
 .benefit h3 {
   margin-bottom: clamp(1rem, 2vw, 2rem);
-  margin-top: clamp(3rem, 4vw, 6rem);
+  margin-top: clamp(3rem, 4vw, 4rem);
   font-size: var(--base-font-size);
 }
 .benefit p { font-size: var(--base-font-size) }
