@@ -13,7 +13,7 @@
   padding: clamp(2rem, 4vw, 6rem) 0;
 }
 .resource-title {
-  font-size: var(--heading-3);
+  font-size: var(--heading-4);
   margin-bottom: clamp(0.6rem, 1vw, 1rem);
 }
 .resource-text {
