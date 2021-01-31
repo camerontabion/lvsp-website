@@ -35,11 +35,12 @@
 }
 .banner-img {
   display: block;
-  max-height: clamp(14rem, 40vw, 58rem);
+  height: clamp(12rem, 26vw, 58rem);
   width: 100%;
   object-fit: cover;
-  object-position: center 30%;
+  object-position: center 26%;
 }
+#cohort2019 .banner-img { object-position: top }
 .banner-cover {
   display: flex;
   align-items: center;
@@ -74,10 +75,8 @@
 .person:nth-child(odd) .person-img { margin-left: clamp(2rem, 2vw, 4rem) }
 .person:nth-child(even) .person-img { margin-right: clamp(2rem, 2vw, 4rem) }
 .person:last-child { border-bottom: none }
-.person-img { width: clamp(14rem, 26vw, 26rem) }
-.person-info {
-  font-size: var(--base-font-size);
-}
+.person-img { width: clamp(12rem, 26vw, 20rem) }
+.person-info { font-size: var(--base-font-size) }
 .person-email { margin-top: 1rem }
 .person-email a { color: var(--light-accent) }
 
@@ -129,7 +128,7 @@
 .slideshow-controls button:hover[name='next'] { background-color: rgba(22, 20, 24, 0.5) }
 .slideshow-controls button:focus { outline: none }
 
-@media (max-width: 1024px) {
+@media (orientation: portrait) {
   .events {
     grid-template-columns: 1fr;
     gap: clamp(1rem, 2vw, 4rem);
@@ -141,12 +140,15 @@
 }
 
 @media (max-width: 480px) {
-  .person { flex-direction: column }
-  .person:nth-child(odd) { flex-direction: column }
-  .person:nth-child(odd) .person-img { margin-left: 0 }
-  .person:nth-child(even) .person-img { margin-right: 0 }
-  .person-img {
-    width: clamp(10rem, 50vw, 20rem);
-    margin-bottom: 1rem;
+  .person { display: block }
+  .person:nth-child(odd) .person-img { 
+    float: right;
+    margin-right: 0;
+    margin-left: 1rem;
   }
+  .person:nth-child(even) .person-img {
+    float: left;
+    margin-left: 0;
+    margin-right: 1rem;
+  } 
 }
