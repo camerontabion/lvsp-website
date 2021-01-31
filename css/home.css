@@ -8,7 +8,7 @@ html { scroll-behavior: smooth }
 .hero-background {
   display: block;
   width: 100%;
-  height: calc(100vh - (clamp(4rem, 9vw, 7rem) + clamp(0.8rem, 2vw, 1.6rem)));
+  height: calc(100vh - (clamp(4rem, 8vw, 6rem) + clamp(0.2rem, 2vw, 1rem)));
   object-fit: cover;
   object-position: left;
 }
@@ -27,12 +27,8 @@ html { scroll-behavior: smooth }
   display: flex;
   align-items: center;
 }
-.hero-logo {
-  flex: 1;
-  width: clamp(20rem, 30vw, 56rem);
-}
+.hero-logo { width: clamp(20rem, 20vw, 30rem) }
 .hero-text {
-  flex: 2;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -59,7 +55,7 @@ html { scroll-behavior: smooth }
 #overview {
   text-align: center;
   margin-top: calc(-1 * clamp(3rem, 3vw, 6rem));
-  padding-top: clamp(6rem, 6vw, 12rem);
+  padding-top: clamp(4rem, 6vw, 8rem);
   padding-bottom: clamp(3rem, 4vw, 6rem);
 }
 #overview img {
@@ -70,15 +66,15 @@ html { scroll-behavior: smooth }
   font-size: var(--heading-4);
   margin: 0 auto;
   margin-bottom: clamp(3rem, 2vw, 6rem);
-  width: 80%;
+  line-height: 1.5;
 }
 
 /* Responsive iframe */
 #lvsp-video {
   position: relative;
-  padding-top: 46.25%;
+  padding-top: 56.25%;
   overflow: hidden;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 #lvsp-video iframe {
@@ -116,17 +112,21 @@ html { scroll-behavior: smooth }
   position: relative;
 }
 .benefit img {
-  width: clamp(6rem, 6vw, 10rem);
+  width: clamp(6rem, 10vw, 10rem);
   position: absolute;
-  top: calc(-1 * clamp(6rem, 6vw, 10rem)/2);
-  left: calc(50% - clamp(6rem, 6vw, 10rem)/2);
+  top: calc(-1 * clamp(6rem, 10vw, 10rem)/2);
+  left: calc(50% - clamp(6rem, 10vw, 10rem)/2);
 }
 .benefit h3 {
-  margin-bottom: clamp(1rem, 2vw, 2rem);
-  margin-top: clamp(3rem, 4vw, 4rem);
+  margin-bottom: 1rem;
+  margin-top: clamp(3rem, 3vw, 4rem);
   font-size: var(--base-font-size);
+  font-weight: 800;
 }
-.benefit p { font-size: var(--base-font-size) }
+.benefit p {
+  font-size: var(--base-font-size);
+  line-height: 1.5;
+}
 
 @media (max-width: 1024px) {
   .benefit-list { grid-template-columns: 1fr 1fr }
